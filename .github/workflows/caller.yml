@@ -16,7 +16,7 @@ jobs:
     uses: saru1604/reuseableworkflowcall/.github/workflows/workflow1.yml@main
     with:
       image_name: my-awesome-app
-#       tag: $GITHUB_RUN_NUMBER
+      tag: $GITHUB_RUN_NUMBER
     secrets:
     
       registry_username: abc
