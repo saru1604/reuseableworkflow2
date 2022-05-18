@@ -16,7 +16,10 @@ jobs:
     uses: saru1604/reuseableworkflowcall/.github/workflows/workflow1.yml@main
     with:
       image_name: my-awesome-app
-      tag: $GITHUB_RUN_NUMBER
+#       tag: $GITHUB_RUN_NUMBER
     secrets:
-      registry_username: ${{secrets.REGISTRY_USERNAME}}
-      registry_password: ${{secrets.REGISTRY_PASSWORD}}
+    
+      registry_username: abc
+      registry_password: abc123      
+#       registry_username: ${{secrets.REGISTRY_USERNAME}}
+#       registry_password: ${{secrets.REGISTRY_PASSWORD}}
